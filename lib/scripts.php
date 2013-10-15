@@ -11,7 +11,7 @@
  * 3. /theme/assets/js/main.min.js (in footer)
  */
 function roots_scripts() {
-  wp_enqueue_style('roots_main', get_template_directory_uri() . '/assets/css/main.min.css', false, '599135c8900522d73f230591110249cc');
+  wp_enqueue_style('roots_main', get_template_directory_uri() . '/assets/css/main.min.css', false, '431ad7f78f7c5a0d7e1580074b182bf5');
   wp_enqueue_style('roots_main', get_template_directory_uri() . '/assets/css/gravityformreset.css', false, '3de628c4245432fae8d6ffd537d202d6');
 
   // jQuery is loaded using the same method from HTML5 Boilerplate:

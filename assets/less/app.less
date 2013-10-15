@@ -1,7 +1,7 @@
 /*!
  * Roots 6.5.0
  */
-@import "bootstrap/bootstrap.less";
+
 @import "font-awesome/less/font-awesome.less";
 @import url(//fonts.googleapis.com/css?family=Roboto:300,400);
 @font-face {
@@ -6221,6 +6221,7 @@ footer{
     ul.footer-nav{
       list-style: none;
       margin: 0;
+      padding: 0;
       @media (min-width: 481px){
         float: right;
         padding-right: 3.6em;
@@ -6254,7 +6255,7 @@ footer{
 }
 .gform_wrapper .gfield_required {
   padding-left: 1px;
-  color: @state-danger-text;
+ // color: @state-danger-text;
 }
 .ginput_container input,
 .ginput_container select,
@@ -6268,7 +6269,7 @@ footer{
   .btn();
   .btn-primary();
 }
-.gform_wrapper .gfield_error {
+/*.gform_wrapper .gfield_error {
   .gfield_label {
     color: @state-danger-text;
   }
@@ -6280,7 +6281,7 @@ footer{
     color: @alert-danger-text;
     .form-control-focus(@alert-danger-text);
   }
-}
+}*/
 .validation_error {
   .alert();
   .alert-danger();
