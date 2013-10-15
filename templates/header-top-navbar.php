@@ -1,4 +1,4 @@
-<header class="banner navbar navbar-default navbar-static-top" role="banner">
+<header class="navbar navbar-fixed-top navbar-inverse" role="banner">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -7,7 +7,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?></a>
+      <a class="navbar-brand" href="<?php echo home_url(); ?>/"><span class="sans-header">My</span>UW</a>
     </div>
 
     <nav class="collapse navbar-collapse" role="navigation">
@@ -17,5 +17,5 @@
         endif;
       ?>
     </nav>
-  </div>
+ </div>
 </header>

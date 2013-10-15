@@ -2,7 +2,7 @@
 /**
  * Enable theme features
  */
-add_theme_support('root-relative-urls');    // Enable relative URLs
+//add_theme_support('root-relative-urls');    // Enable relative URLs
 add_theme_support('rewrites');              // Enable URL rewrites
 add_theme_support('bootstrap-top-navbar');  // Enable Bootstrap's top navbar
 add_theme_support('bootstrap-gallery');     // Enable Bootstrap's thumbnails component on [gallery]
@@ -78,6 +78,9 @@ function roots_display_sidebar() {
  * Default: 1140px is the default Bootstrap container width.
  */
 if (!isset($content_width)) { $content_width = 1140; }
+if ( function_exists( 'add_image_size' ) ) { 
+  add_image_size( 'homepage-banner', 2048, 560, true ); //(cropped)
+}
 
 /**
  * Define helper constants
