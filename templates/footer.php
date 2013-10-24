@@ -2,7 +2,7 @@
     <div class="col-lg-12">
     	<div class="row uw">
 	    	<div class="col-xs-12 col-sm-6 col-md-6 ">
-	    		<img src="/assets/img/uw-madison_2x.png" alt="University of Wisconsin-Madison" class="img-responsive">
+	    		<a href="http://www.wisc.edu"><img src="/assets/img/uw-madison_2x.png" alt="University of Wisconsin-Madison" class="img-responsive" border="0" style="border: 0px solid ##b41f24"></a>
 	    	</div>
 		  </div>
 		<div class="row copyright">

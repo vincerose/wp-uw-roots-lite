@@ -2,8 +2,9 @@
  * Roots 6.5.0
  */
 
+@red-dark:              #660000;//UW Red
 @import "font-awesome/less/font-awesome.less";
-@import url(//fonts.googleapis.com/css?family=Roboto:300,400);
+@import url(https://fonts.googleapis.com/css?family=Roboto:200,300,400);
 @font-face {
   font-family: "FrizQuadrataSH";
   src: url('/assets/fonts/24C651_0_0.eot');
@@ -268,7 +269,6 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
-  color: #6e6a5b;
   background-color: #ffffff;
 }
 input,
@@ -3800,7 +3800,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   .navbar-nav > li > a {
     padding-top: 30px;
     padding-bottom: 30px;
-    font-family: "Roboto", inherit;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 }
 @media (min-width: 768px) {
@@ -6091,7 +6091,7 @@ body {
   padding-top: 3.6em;
   padding-bottom: 3.6em;
   position: relative;
-  font-family: 'Roboto', inherit;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-weight: thin;
   font-weight: 300;
@@ -6140,7 +6140,7 @@ body {
   right: 3.6em;
 }
 .sans-header{
-  font-family: 'Roboto', inherit;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: thin;
   font-weight: 300!important;
   em{
@@ -6152,25 +6152,22 @@ body {
   padding: 24px 0;
   overflow: hidden;
   .col-md-6{
-    float:none;
-    text-align: center;
-    
-    @media (min-width: 1025px) {
-      float:left; 
-      &:first-child{
-        border-right: 1px solid #777777;
+    float:left; 
+        &:first-child{
+          border-right: 1px solid #777777;
+        }
+    @media (max-width: 999px) {
+      float:none;
+      text-align: center;
+        margin-bottom: 24px;
+        padding-bottom: 24px;
+        padding-top: 0px;
+        &:first-child{
+          border-right: 0px solid #777777;
+          border-bottom: 1px solid #777777;
+        }
       }
     }
-    @media (max-width: 1024px) {
-      float:left; 
-      margin-bottom: 24px;
-      padding-bottom: 24px;
-      padding-top: 0px;
-      &:first-child{
-        border-bottom: 1px solid #777777;
-      }
-    }
-  }
   @media (min-width: 1000px) {
     .img-responsive{
       max-height: 281px;
@@ -6196,9 +6193,8 @@ body {
 }
 footer{
   margin: 0;
-  color: #666666;
   background-color: #CCCCCC;
-  font-family: 'Roboto', inherit;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: thin;
   font-weight: 300!important;
   @media (max-width: 480px){
@@ -6212,6 +6208,12 @@ footer{
         max-width: 312px;
         height: auto;
       }
+    }
+    
+  }
+  a{
+    &:link, &:hover, &:visited, &:active{
+      color: @red-dark;
     }
   }
   .copyright{
@@ -6242,6 +6244,8 @@ footer{
 /****************************************
   Begin Gravity Forms override
 ****************************************/
+@alert-danger-border: #990000;
+@state-danger-text: #990000;
 .gform_wrapper ul {
   .list-unstyled();
 }
@@ -6269,7 +6273,7 @@ footer{
   .btn();
   .btn-primary();
 }
-/*.gform_wrapper .gfield_error {
+.gform_wrapper .gfield_error {
   .gfield_label {
     color: @state-danger-text;
   }
@@ -6277,11 +6281,11 @@ footer{
   select,
   textarea {
     border-color: @alert-danger-border;
-    background-color: @alert-danger-bg;
+    /*background-color: @alert-danger-bg;
     color: @alert-danger-text;
-    .form-control-focus(@alert-danger-text);
+    .form-control-focus(@alert-danger-text);*/
   }
-}*/
+}
 .validation_error {
   .alert();
   .alert-danger();
